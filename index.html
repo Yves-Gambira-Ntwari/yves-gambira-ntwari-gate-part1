@@ -24,44 +24,57 @@
           </div>
           <div class="text-white flex gap-2 text-2xl lg:hidden">
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><i class="fa-solid fa-bars"></i></div>
+            <div id="menu"><i class="fa-solid fa-bars"></i></div>
           </div>
         </div>
-        <ul class="lg:flex gap-5 text-white [&>*]:hover:underline hidden">
+        <ul id="small" class="lg:flex lg:static gap-5 text-white [&>*]:hover:underline fixed left-0 right-0 top-0 bottom-full transition-all duration-300  max-lg:text-[#4f6c77] max-lg:text-2xl max-lg:[&>*]:p-2  bg-white lg:bg-transparent overflow-hidden">
           <li><a href="#">News</a></li>
           <li><a href="#">Jobs</a></li>
           <li><a href="#">AZ</a></li>
           <li><a href="#">Almuni</a></li>
           <li><a href="#">Staff</a></li>
           <li><a href="#">Students</a></li>
+          <div id="close" class="fixed top-10 right-10 hidden">
+            <i class="fa-solid fa-x"></i>
+          </div>
         </ul>
       </div>
 
-      <aside class="lg:flex justify-between hidden">
-        <ul class="text-white flex gap-5 [&>*]:mx-auto">
-          <li class="group cursor-pointer text-lg">
+      <aside id="big" class="lg:flex lg:static justify-between fixed right-0 left-0 bottom-80 h-0 overflow-hidden">
+        <ul class="text-white lg:flex lg:bg-transparent bg-white gap-5 [&>*]:mx-auto max-lg:mb-10 max-lg:text-[#4f6c77] max-lg:px-2  max-lg:space-y-10 max-lg:[&>*]:text-3xl">
+          <li class="group cursor-pointer text-lg flex items-center">
             <span class="group-hover:border-b-2 font-bold py-2">Study</span>
-            <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            <div class="hidden lg:block">
+              <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            </div>
           </li>
-          <li class="group cursor-pointer text-lg">
+          <li class="group cursor-pointer text-lg flex items-center">
             <span class="group-hover:border-b-2 font-bold py-2"
               >Student Life</span
             >
-            <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            <div class="hidden lg:block">
+              <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            </div>
           </li>
-          <li class="group cursor-pointer text-lg">
+          <li class="group cursor-pointer text-lg flex items-center">
             <span class="group-hover:border-b-2 font-bold py-2"
               >Research and innovation</span
             >
-            <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            <div class="hidden lg:block">
+              <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            </div>
           </li>
-          <li class="group cursor-pointer text-lg">
+          <li class="group cursor-pointer text-lg flex items-center">
             <span class="group-hover:border-b-2 font-bold py-2">Global</span>
-            <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            <div class="hidden lg:block">
+              <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            </div>
           </li>
-          <li class="group cursor-pointer text-lg">
+          <li class="group cursor-pointer text-lg flex items-center">
             <span class="group-hover:border-b-2 font-bold py-2">About us</span>
-            <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            <div class="hidden lg:block">
+              <i class="fa-solid fa-greater-than transform rotate-90 text-sm"></i>
+            </div>
           </li>
         </ul>
         <ul class="text-white text-lg">
